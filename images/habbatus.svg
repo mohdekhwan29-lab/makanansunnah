@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%">
+      <stop offset="0" stop-color="#1b5e43"/><stop offset="1" stop-color="#092a1f"/>
+    </radialGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3dc95"/><stop offset=".5" stop-color="#c9a54c"/><stop offset="1" stop-color="#7d5d1b"/>
+    </linearGradient>
+    <radialGradient id="bowl" cx="50%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#d8b26a"/><stop offset="1" stop-color="#7a5524"/>
+    </radialGradient>
+    <pattern id="seeds" width="22" height="18" patternUnits="userSpaceOnUse">
+      <path d="M3 9 l6 -5 l4 7 z" fill="#111"/><path d="M13 4 l7 2 l-4 6 z" fill="#1d1d1d"/><path d="M10 16 l6 -4 l3 6 z" fill="#0a0a0a"/>
+      <circle cx="7" cy="7" r=".9" fill="#555"/><circle cx="16" cy="6" r=".8" fill="#666"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <g fill="none" stroke="#c9a54c" stroke-opacity=".18">
+    <circle cx="300" cy="230" r="210"/><circle cx="300" cy="230" r="160"/><circle cx="300" cy="230" r="110"/>
+  </g>
+  <!-- nigella flower -->
+  <g transform="translate(470 120)">
+    <g fill="#bcd4f0" opacity=".9">
+      <ellipse rx="16" ry="38" transform="rotate(0) translate(0 -30)"/>
+      <ellipse rx="16" ry="38" transform="rotate(72) translate(0 -30)"/>
+      <ellipse rx="16" ry="38" transform="rotate(144) translate(0 -30)"/>
+      <ellipse rx="16" ry="38" transform="rotate(216) translate(0 -30)"/>
+      <ellipse rx="16" ry="38" transform="rotate(288) translate(0 -30)"/>
+    </g>
+    <circle r="14" fill="url(#g)"/>
+    <g stroke="#e8cf8a" stroke-width="2"><path d="M0 0 l0 -22 M0 0 l20 -8 M0 0 l14 18 M0 0 l-14 18 M0 0 l-20 -8"/></g>
+  </g>
+  <!-- bowl with seeds -->
+  <ellipse cx="290" cy="380" rx="190" ry="24" fill="#000" opacity=".3"/>
+  <path d="M110 270 Q120 390 290 395 Q460 390 470 270 Z" fill="url(#bowl)"/>
+  <ellipse cx="290" cy="270" rx="180" ry="42" fill="url(#g)"/>
+  <ellipse cx="290" cy="268" rx="165" ry="34" fill="#141414"/>
+  <path d="M140 262 Q290 200 440 262 Q290 300 140 262Z" fill="url(#seeds)"/>
+  <ellipse cx="290" cy="268" rx="165" ry="34" fill="url(#seeds)"/>
+  <!-- wooden spoon -->
+  <g transform="translate(140 330) rotate(-18)">
+    <rect x="-150" y="-7" width="150" height="14" rx="7" fill="#a67a3d"/>
+    <ellipse cx="22" cy="0" rx="36" ry="24" fill="#a67a3d"/>
+    <ellipse cx="22" cy="-2" rx="28" ry="17" fill="url(#seeds)"/>
+  </g>
+  <g fill="#111"><path d="M120 400 l6 -4 l3 6z"/><path d="M90 380 l6 -3 l2 6z"/><path d="M500 395 l6 -4 l3 6z"/><path d="M520 370 l5 -4 l3 6z"/></g>
+</svg>

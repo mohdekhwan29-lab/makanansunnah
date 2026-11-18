@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="75%">
+      <stop offset="0" stop-color="#1f6b4c"/><stop offset="1" stop-color="#0b2e22"/>
+    </radialGradient>
+    <linearGradient id="d" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8a4a22"/><stop offset=".55" stop-color="#5a2a12"/><stop offset="1" stop-color="#2e1408"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3dc95"/><stop offset=".5" stop-color="#c9a54c"/><stop offset="1" stop-color="#8f6d22"/>
+    </linearGradient>
+    <pattern id="p" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M30 4 L56 30 L30 56 L4 30 Z" fill="none" stroke="#c9a54c" stroke-opacity=".12" stroke-width="1.2"/>
+      <circle cx="30" cy="30" r="3" fill="#c9a54c" fill-opacity=".12"/>
+    </pattern>
+    <g id="date">
+      <ellipse cx="0" cy="0" rx="34" ry="52" fill="url(#d)"/>
+      <path d="M-14 -38 Q-24 -5 -12 34" stroke="#2a1006" stroke-opacity=".5" stroke-width="3" fill="none"/>
+      <path d="M8 -44 Q18 -10 10 38" stroke="#2a1006" stroke-opacity=".35" stroke-width="2.5" fill="none"/>
+      <ellipse cx="-12" cy="-22" rx="7" ry="16" fill="#fff" fill-opacity=".22"/>
+      <ellipse cx="0" cy="-50" rx="9" ry="5" fill="#d9b25a"/>
+    </g>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <rect width="600" height="450" fill="url(#p)"/>
+  <!-- palm frond -->
+  <g stroke="url(#g)" stroke-width="3" fill="none" stroke-linecap="round" opacity=".85">
+    <path d="M70 420 Q200 200 470 70"/>
+    <path d="M120 340 l-50 -40 M150 300 l-55 -38 M182 262 l-55 -34 M216 228 l-52 -32 M252 196 l-50 -28 M290 166 l-46 -26 M330 138 l-42 -22 M372 114 l-36 -18 M414 92 l-30 -14"/>
+    <path d="M120 340 l30 -58 M150 300 l34 -58 M182 262 l36 -56 M216 228 l38 -52 M252 196 l38 -48 M290 166 l36 -44 M330 138 l32 -40 M372 114 l28 -34 M414 92 l22 -28"/>
+  </g>
+  <!-- plate -->
+  <ellipse cx="320" cy="350" rx="200" ry="52" fill="#0a2219" opacity=".55"/>
+  <ellipse cx="320" cy="335" rx="200" ry="52" fill="url(#g)"/>
+  <ellipse cx="320" cy="330" rx="176" ry="40" fill="#f6ead0"/>
+  <!-- dates -->
+  <use href="#date" transform="translate(220 290) rotate(-55)"/>
+  <use href="#date" transform="translate(300 300) rotate(80)"/>
+  <use href="#date" transform="translate(395 292) rotate(-70)"/>
+  <use href="#date" transform="translate(260 255) rotate(20)"/>
+  <use href="#date" transform="translate(350 250) rotate(-25)"/>
+  <use href="#date" transform="translate(430 260) rotate(35)"/>
+  <use href="#date" transform="translate(310 215) rotate(70)"/>
+</svg>
